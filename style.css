@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@300&display=swap');
+
+:root {
+    --primary-color: #271407;
+    --secondary-color: #CB8B48;
+    --tertiary-color:  #96804F;
+    --alternate-color: #8C7464;
+    --desktop-container: 80%;
+    --mobile-container: 90%;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.75;
+    background-color: var(--primary-color);
+}
+
+.container {
+    margin: 0 auto;
+    width: var(--desktop-container);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+a {
+    color: var(--secondary-color);
+    transition: var(--transition);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+    color: var(--alternate-color);
+}
+
+h1, h2, h3, h4, p {
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+section {
+    padding: 5.5rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3, h4, p, small {
+    font-family: 'Manrope', sans-serif;
+}
+
+#navbar2, #menu-btn {
+    display: none;
+}
+
+html, body {
+    width: auto!important; overflow-x: hidden!important
+} 
+
+.btn {
+    padding: 5px 20px;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);    
+    cursor: pointer;
+    transition: var(--transition); 
+    text-transform: capitalize;  
+}
+/* END OF GENERAL STYLING */
