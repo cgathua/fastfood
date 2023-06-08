@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@300&display=swap');
 
 :root {
-    --primary-color: #271407;
-    --secondary-color: #CB8B48;
-    --tertiary-color: #96804F;
-    --alternate-color: #8C7464;
+    --primary-color: #242423 ;
+    --secondary-color: #e8eddf;
+    --tertiary-color: #f5cb5c;
+    --alternate-color: #cfdbd5;
+    --rgba-color: rgba(232, 237, 223, 0.2);
     --desktop-container: 80%;
     --mobile-container: 90%;
     --transition: all 0.3s ease;
@@ -48,7 +49,7 @@ a {
 }
 
 a:hover {
-    color: var(--alternate-color);
+    color: var(--tertiary-color);
 }
 
 h1, h2, h3, h4, p {
@@ -89,8 +90,8 @@ html, body {
     border: 1px solid var(--secondary-color);    
     cursor: pointer;
     transition: var(--transition); 
-    text-transform: capitalize;  
 }
+
 /* END OF GENERAL STYLING */
 
 header {
@@ -104,7 +105,6 @@ header {
     z-index: 999;
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
 }
 
 #navbar {
@@ -118,4 +118,51 @@ header {
     font-size: 1.5rem;
 }
 /* END OF HEADER STYLING */
+
+section[class="hero"] {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--secondary-color);
+    display: grid;
+    place-items: end center;
+}
+
+.hero {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('images/pexels-jonathan-borba-2983101.jpg');
+  
+    @supports (background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('images/pexels-jonathan-borba-2983101.avif')) {
+      background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('images/pexels-jonathan-borba-2983101.avif');
+    }
+} /* css fallbacks for background image */
+
+article[class="banner"] {
+    padding: 1rem 0;
+}
+
+.banner button svg {
+    height: 1em;
+    width: 1em;
+    top: .25em;
+    position: relative;
+}
+
+.banner h1 {
+    text-transform: capitalize;
+}
+
+.banner button {
+    font-size: large;
+    margin-top: 1rem;
+}
+
+.banner p {
+    text-align: left;
+}
+
+
+/* END OF HOME STYLING */
+
+
 
