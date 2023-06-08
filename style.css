@@ -3,7 +3,7 @@
 :root {
     --primary-color: #271407;
     --secondary-color: #CB8B48;
-    --tertiary-color:  #96804F;
+    --tertiary-color: #96804F;
     --alternate-color: #8C7464;
     --desktop-container: 80%;
     --mobile-container: 90%;
@@ -92,3 +92,30 @@ html, body {
     text-transform: capitalize;  
 }
 /* END OF GENERAL STYLING */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+/* END OF HEADER STYLING */
+
