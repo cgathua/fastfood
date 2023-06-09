@@ -6,7 +6,7 @@
     --tertiary-color: #f5cb5c;
     --alternate-color: #cfdbd5;
     --rgba-color: rgba(232, 237, 223, 0.2);
-    --desktop-container: 80%;
+    --desktop-container: 86%;
     --mobile-container: 90%;
     --transition: all 0.3s ease;
 }
@@ -62,7 +62,7 @@ h1 {
 }
 
 section {
-    padding: 5.5rem 0;
+    padding: 6rem 0;
 }
 
 section h2 {
@@ -189,4 +189,24 @@ s {
 .menu-items figcaption {
     padding-top: 0.5rem;
 }
+/* END OF MENU SECTION */
 
+section[id="drinks"] .container {
+    max-width: 500px;
+    
+}
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+  
+.flavor {
+    text-align: left;
+    width: 75%;
+}
+  
+.price {
+    text-align: right;
+    width: 25%;
+} 
