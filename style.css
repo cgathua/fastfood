@@ -90,7 +90,7 @@ html, body {
     border: 1px solid var(--secondary-color);    
     cursor: pointer;
     transition: var(--transition);
-    text-transform: capitalize; 
+    text-transform: uppercase; 
 }
 
 /* END OF GENERAL STYLING */
@@ -125,7 +125,7 @@ section[class="hero"] {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     display: grid;
     place-items: end center;
 }
@@ -145,7 +145,7 @@ article[class="banner"] {
 .banner button svg {
     height: 1em;
     width: 1em;
-    top: .25em;
+    top: .125em;
     position: relative;
 }
 
@@ -154,7 +154,7 @@ article[class="banner"] {
 }
 
 .banner button {
-    font-size: large;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
@@ -189,7 +189,7 @@ s {
 .menu-items figcaption {
     padding-top: 0.5rem;
 }
-/* END OF MENU SECTION */
+/* END OF MENU STYLING */
 
 section[id="drinks"] .container {
     max-width: 500px;
@@ -210,3 +210,26 @@ section[id="drinks"] .container {
     text-align: right;
     width: 25%;
 } 
+/* END OF DRINKS STYLING */
+
+section[class="trust"] {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--primary-color);
+    display: grid;
+    place-items: end center;
+}
+
+.trust {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('images/pexels-daniel-reche-1556688.jpg');
+  
+    @supports (background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('images/pexels-daniel-reche-1556688.avif')) {
+      background-image:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('images/pexels-daniel-reche-1556688.avif');
+    }
+} /* css fallbacks for background image */
+
+.trust h2 {
+    display: initial;
+}
