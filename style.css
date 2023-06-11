@@ -345,6 +345,9 @@ ul[class="footer-legal-items"] li {
 /* END OF MEDIA QUERIES FOR TABLETS */
 
 @media screen and (max-width: 600px) {
+    .container {
+        width: var(--mobile-container);
+    }
     section[id="menu"] .container { 
         grid-template-columns: 1fr;
         align-items: center;
