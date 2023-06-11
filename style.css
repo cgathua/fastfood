@@ -154,7 +154,7 @@ s { text-decoration: line-through;}
 
 .menu-items { padding: 1rem;}
 
-.menu-items figcaption { padding-top: 0.5rem;}
+figcaption { padding-top: 0.5rem;}
 /* END OF MENU STYLING */
 
 section[id="drinks"] .container { max-width: 500px;}
