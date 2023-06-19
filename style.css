@@ -91,7 +91,6 @@ header {
     right: 0;
     z-index: 999;
     width: 100%;
-    padding: 0.5rem 1rem;
 }
 
 #navbar {
@@ -99,15 +98,11 @@ header {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-right: 1rem;
 }
 
-.logo { font-size: 1.5rem;}
+.logo { font-size: 1.5rem; margin-left: 1rem;}
 /* END OF HEADER STYLING */
-
-@supports (background-image: background) {
-    section[class="hero"] { background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('./images/pexels-jonathan-borba-2983101.avif');}
-}   
-
 
 section[class="hero"] {
     min-height: 100vh;
@@ -117,7 +112,10 @@ section[class="hero"] {
     background-color: var(--primary-color);
     display: grid;
     place-items: end center;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('./images/pexels-jonathan-borba-2983101.jpg');   
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('./images/pexels-jonathan-borba-2983101.jpg'); 
+    @supports (background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('./images/pexels-jonathan-borba-2983101.webp')) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('./images/pexels-jonathan-borba-2983101.webp');
+    }    
 }
 
 article[class="banner"] { padding: 1rem 0;}
@@ -176,19 +174,18 @@ section[id="drinks"] .container { max-width: 500px;}
 } 
 /* END OF DRINKS STYLING */
 
-@supports (background-image: background) {
-    section[class="trust"] { background-image:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('images/pexels-daniel-reche-1556688.avif');}
-}
-
 section[class="trust"] {
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: var(--primary-color);
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('images/pexels-daniel-reche-1556688.jpg');
     display: grid;
     place-items: end center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('./images/pexels-daniel-reche-1556688.jpg') ;
+    @supports (background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('./images/pexels-daniel-reche-1556688.webp')) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('./images/pexels-daniel-reche-1556688.webp');
+    }  
 }
 /* END OF WHY CHOOSE US STYLING */
 

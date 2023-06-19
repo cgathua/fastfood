@@ -19,5 +19,6 @@ Photo by Engin Akyurt: https://www.pexels.com/photo/plate-of-fries-and-burger-32
 
 Photo by Rajesh TP: https://www.pexels.com/photo/bread-with-fried-meat-served-on-plate-1600732/
 
+Photo by Daniel Reche: https://www.pexels.com/photo/classic-hamburger-and-french-fries-on-wooden-board-1556688/
 
 
