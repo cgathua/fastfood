@@ -414,10 +414,9 @@ ul[class="footer-legal-items"] li {
     }
 
     #navbar2 li a {
-        color: var(--primary-color);
+        color: var(--secondary-color);
         line-height: 1;
         font-size: 13px;
-        color: var(--color-primary);
         border-radius: 3px;
         display: flex;
         justify-content: center;
