@@ -151,7 +151,7 @@ section[class="hero"] {
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    object-fit: cover;
     background-color: var(--secondary-color);
     display: grid;
     place-items: end center;
