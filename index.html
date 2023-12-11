@@ -13,16 +13,16 @@
 
     <!--PRELOAD BACKGROUND IMAGE-->
     <link rel="preload" href="./images/pexels-jonathan-borba-2983101.webp" as="image">
-
+    <!--STYLESHEET-->
     <link rel="stylesheet" href="style.css">
-
+    <!--JS SCRIPT-->
     <script defer src="./main.js"></script>
 </head>
 
 <body>
     <main>
         <header>
-            <a href="#home" class="logo">LOGO</a>
+            <a href="#home" class="logo" aria-label="logo">LOGO</a>
             <nav>
                 <ul id="navbar">
                     <li><a href="#home">Home</a></li>
@@ -52,8 +52,8 @@
 
         </header>
 
-        <section id="home" class="hero">
-            <div class="container">
+        <section id="home" class="hero" aria-label="home">
+            <figure class="container" aria-label="home content">
 
                 <article class="banner">
                     <h1>Organic Burgers</h1>
@@ -71,18 +71,22 @@
                     </button>
                 </article>
 
-            </div>
+            </figure>
         </section>
         <!--END OF HOME SECTION-->
-        <section id="menu">
+        <section id="menu" aria-label="menu">
             <h2>Menu</h2>
-            <div class="container">
+            <figure class="container" aria-label="menu content">
 
-                <figure class="menu-items">
+                <figure class="menu-items" aria-label="menu items">
                     <picture class="thumbnail">
                         <source srcset="./images/pexels-chicken-mackay-5474836.avif" type="image/avif">
-                        <img src="./images/pexels-chicken-mackay-5474836.jpg" width="640" height="427"
-                            alt="chicken burger" loading="lazy"
+                        <img 
+                            src="./images/pexels-chicken-mackay-5474836.jpg" 
+                            width="640" 
+                            height="427"
+                            alt="chicken burger" 
+                            loading="lazy"
                         >
                     </picture>
                     <figcaption>Chicken Burger</figcaption>
@@ -93,10 +97,14 @@
                     </small>
                 </figure>
             
-                <figure class="menu-items">
+                <figure class="menu-items" aria-label="menu items">
                     <picture class="thumbnail">
                         <source srcset="./images/pexels-pixabay-60616.avif" type="image/avif">
-                        <img src="./images/pexels-pixabay-60616.jpg" width="640" height="427" alt="chicken nuggets"
+                        <img 
+                            src="./images/pexels-pixabay-60616.jpg" 
+                            width="640" 
+                            height="427" 
+                            alt="chicken nuggets"
                             loading="lazy"
                         >
                     </picture>
@@ -108,10 +116,14 @@
                     </small>
                 </figure>
             
-                <figure class="menu-items">
+                <figure class="menu-items" aria-label="menu items">
                     <picture class="thumbnail">
                         <source srcset="./images/pexels-caricatte-2336673.avif" type="image/avif">
-                        <img src="./images/pexels-caricatte-2336673.jpg" width="640" height="427" alt="roast beef"
+                        <img 
+                            src="./images/pexels-caricatte-2336673.jpg" 
+                            width="640" 
+                            height="427" 
+                            alt="roast beef"
                             loading="lazy"
                         >
                     </picture>
@@ -123,10 +135,14 @@
                     </small>
                 </figure>
         
-                <figure class="menu-items">
+                <figure class="menu-items" aria-label="menu items">
                     <picture class="thumbnail">
                         <source srcset="./images/pexels-rajesh-tp-1600711.avif" type="image/avif">
-                        <img src="./images/pexels-rajesh-tp-1600711.jpg" width="640" height="427" alt="club sandwich"
+                        <img 
+                            src="./images/pexels-rajesh-tp-1600711.jpg" 
+                            width="640" 
+                            height="427" 
+                            alt="club sandwich"
                             loading="lazy"
                         >
                     </picture>
@@ -138,10 +154,14 @@
                     </small>
                 </figure>
         
-                <figure class="menu-items">
+                <figure class="menu-items" aria-label="menu items">
                     <picture class="thumbnail">
                         <source srcset="./images/pexels-engin-akyurt-3219483.avif" type="image/avif">
-                        <img src="./images/pexels-engin-akyurt-3219483.jpg" width="640" height="427" alt="beef burger"
+                        <img 
+                            src="./images/pexels-engin-akyurt-3219483.jpg" 
+                            width="640" 
+                            height="427" 
+                            alt="beef burger"
                             loading="lazy"
                         >
                     </picture>
@@ -153,10 +173,14 @@
                     </small>
                 </figure>
             
-                <figure class="menu-items">
+                <figure class="menu-items" aria-label="menu items">
                     <picture class="thumbnail">
                         <source srcset="./images/pexels-rajesh-tp-1600732.avif" type="image/avif">
-                        <img src="./images/pexels-rajesh-tp-1600732.jpg" width="640" height="427" alt="chicken sandwich"
+                        <img 
+                            src="./images/pexels-rajesh-tp-1600732.jpg" 
+                            width="640" 
+                            height="427" 
+                            alt="chicken sandwich"
                             loading="lazy"
                         >
                     </picture>
@@ -168,14 +192,15 @@
                     </small>
                 </figure>
 
-            </div>
+            </figure>
         </section>
         <!--END OF MENU SECTION-->
-        <section id="drinks">
+        <section id="drinks" aria-label="drinks">
             <h2>Drinks</h2>
-            <div class="container"> 
+            <figure class="container" aria-label="drinks content"> 
 
-                <svg aria-hidden="true" height="96px" width="96px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" class="drinks"
+                <svg 
+                    aria-hidden="true" height="96px" width="96px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" class="drinks"
                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 52.644 52.644" xml:space="preserve"
                     fill="#e8eddf" stroke="currentColor">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -189,27 +214,27 @@
                     </g>
                 </svg> 
 
-                <article class="item">
+                <figcaption class="item">
                     <p class="flavor">Soda</p><p class="price">$ 2.99</p>
-                </article>
-                <article class="item">
+                </figcaption>
+                <figcaption class="item">
                     <p class="flavor">Lemonade</p><p class="price">$ 3.99</p>
-                </article>
-                <article class="item">
+                </figcaption>
+                <figcaption class="item">
                     <p class="flavor">Vanilla Milkshake</p><p class="price">$ 4.99</p>
-                </article>
-                <article class="item">
+                </figcaption>
+                <figcaption class="item">
                     <p class="flavor">Chocolate Milkshake</p><p class="price">$ 4.99</p>
-                </article>
-                <article class="item">
+                </figcaption>
+                <figcaption class="item">
                     <p class="flavor">Strawberry Milkshake</p><p class="price">$ 4.99</p>
-                </article>
+                </figcaption>
 
-            </div>
+            </figure>
         </section>
         <!--END OF DRINKS SECTION-->
-        <section id="why_choose_us" class="trust">
-            <div class="container">
+        <section id="why_choose_us" class="trust" aria-label="why choose us">
+            <figure class="container" aria-label="why choose us content">
 
                 <article class="text">
                     <h3>Why choose us?</h3>
@@ -219,11 +244,10 @@
                     <p>Sign up below, to receive coupons.</p>
                 </article>
 
-            </div>
+            </figure>
         </section>
         <!--END OF WHY CHOOSE US SECTION-->
-    
-        <footer id="footer">
+        <footer>
             <section id="footer-main">
 
                 <article class="footer-column">
@@ -239,7 +263,7 @@
                 <article class="footer-column">
                     <h2 class="footer-title">Location</h2>
                     <ul>
-                        <li>123 Peachtree Street</li>
+                        <li>Peachtree Street</li>
                         <li>Atlanta, GA 30144</li>
                     </ul>
                 </article>
@@ -248,7 +272,8 @@
                     <h2 class="footer-title">Contact</h2>
                     <ul>
                         <li>
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            <svg 
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-mail">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
@@ -257,7 +282,8 @@
                             </svg><a href="#"> support@logo.com</a>
                         </li>
                         <li>
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            <svg 
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-phone">
                                 <path
@@ -272,7 +298,7 @@
                     <h2 class="footer-title">Get Coupons</h2>
                     <p>Subscribe to our mailing list.</p>
                     <form action="newsletter" aria-label="signup">
-                        <label for="email"><input id="email" type="email" name="email" placeholder="Enter your email" required
+                        <label for="email" aria-labelledby="email"><input id="email" type="email" name="email" placeholder="Enter your email" required
                             autocomplete="email" aria-label="enter your email">
                         </label>
                         <input type="submit" value="Subscribe">
@@ -283,8 +309,9 @@
     
             <section id="footer-socials" aria-label="social media">
                 <ul class="footer-icons">
-                    <li><a href="#">
-                            <svg aria-label="facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    <li><a href="https://www.facebook.com">
+                            <svg 
+                                aria-label="facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
@@ -292,8 +319,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <svg aria-label="twitter" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <a href="https://twitter.com/">
+                            <svg 
+                                aria-label="twitter" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
                                 <path
@@ -302,8 +330,9 @@
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#">
-                            <svg aria-label="instagram" xmlns="http://www.w3.org/2000/svg" width="16"
+                    <li><a href="https://www.instagram.com/">
+                            <svg 
+                                aria-label="instagram" xmlns="http://www.w3.org/2000/svg" width="16"
                                 height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -312,8 +341,9 @@
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#">
-                            <svg aria-label="github" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    <li><a href="https://github.com">
+                            <svg 
+                                aria-label="github" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
                                 <path
@@ -322,8 +352,9 @@
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#">
-                            <svg aria-label="linkedin" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    <li><a href="https://www.linkedin.com">
+                            <svg 
+                                aria-label="linkedin" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
                                 <path
@@ -335,7 +366,8 @@
                         </a>
                     </li>
                     <li><a href="#home">
-                            <svg aria-label="home" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            <svg 
+                                aria-label="home" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>

@@ -8,9 +8,11 @@ menuBtn.addEventListener('click', () => {
     navMenu.classList.toggle("active");
 });
 
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener
-    ('click', () => {
+document.querySelectorAll('.nav-link').forEach(li => {
+    li.addEventListener('click', () => {
         menuBtn.classList.remove('active');
         navMenu.classList.remove('active');
-    })); 
+    })
+})
+
 // END OF HAMBURGER MENU
