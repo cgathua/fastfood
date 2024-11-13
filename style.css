@@ -6,7 +6,7 @@
     --tertiary-color: #e8eddf;
     --desktop-container: 86%;
     --mobile-container: 90%;
-    --transition: all 0.3s linear;
+    --transition: all 0.3s ease;
 }
 
 * {
@@ -412,7 +412,7 @@ ul[class="footer-legal-items"] li {
         background: rgba(255, 255, 255, 0.5);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        transition: var(--transition);
+        transition: all 0.3s ease-out;
     }
 
     #navbar2 li {
